@@ -1,3 +1,4 @@
+import NewMeetupForm from '../../components/meetups/NewMeetupForm';
 // our-domain.com/new-meetup
 
 function NewMeetupPage() {
