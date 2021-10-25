@@ -9,7 +9,7 @@ function DetailPage() {
   // send a request to a backend API
   // to fetch a news item with newsId
 
-  return <h1>The News Page</h1>;
+  return <h1>The Detail Page</h1>;
 }
 
 export default DetailPage;
