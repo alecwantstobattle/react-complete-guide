@@ -1,4 +1,3 @@
-import { getStaticProps } from '..';
 import MeetupDetail from '../../components/meetups/MeetupDetail';
 
 function MeetupDetails() {
@@ -10,6 +9,24 @@ function MeetupDetails() {
       description="The meetup description"
     />
   );
+}
+
+export async function getStaticPaths() {
+  return {
+    fallback: false,
+    paths: [
+      {
+        params: {
+          meetupId: 'm1',
+        },
+      },
+      {
+        params: {
+          meetupId: 'm2',
+        },
+      },
+    ],
+  };
 }
 
 export async function getStaticProps(context) {
