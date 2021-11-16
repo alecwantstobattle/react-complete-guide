@@ -40,3 +40,13 @@ let people: Person[];
 
 let course: string | number = 'React - The Complete Guide';
 course = 12345;
+
+// Function & types
+function add(a: number, b: number) {
+  // inferred type number
+  return a + b;
+}
+
+function print(value: any) {
+  console.log(value);
+}
